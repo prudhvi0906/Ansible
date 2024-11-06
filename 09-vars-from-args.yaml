@@ -1,0 +1,8 @@
+- name: variables from play-1
+  hosts: localhost
+  tasks: 
+  - name: check variable
+    vars:
+      course: "DevOps with Aws"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"
